@@ -20,7 +20,7 @@ while program_location <= end_index:
     elif token == "-":
         array[pointer] -= 1
     elif token == ".":
-        print(chr(array[pointer]))
+        print(chr(array[pointer]), end="")
     elif token == ",": # wat evn is dis?
         pass
     elif token =="[":
