@@ -46,7 +46,7 @@ def main():
                     elif character == "]":
                         loop_level += 1
                 program_location -= 1
-            elif token == "c":
+            elif token == "&":
                 array = [0] * 30000
             program_location += 1
     print("\n")
