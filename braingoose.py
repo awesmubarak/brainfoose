@@ -27,8 +27,9 @@ while True:
             array[pointer] -= 1
         elif token == ".":
             print(chr(array[pointer]), end="")
-        elif token == ",": # wat evn is dis?
-            pass
+        elif token == ",":
+            input_data = input("input > ")
+            array[pointer] = ord(input_data[0])
         elif token =="[":
             if array[pointer] == 0:
                 loop_level = 1
