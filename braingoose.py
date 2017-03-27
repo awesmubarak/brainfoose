@@ -6,7 +6,7 @@ END_BOLD = '\033[0m'
 print(BOLD + "\nBraingoose REPL\n" + END_BOLD)
 
 while True:
-    program = input("bg >  ")
+    program = input("bg > ")
     end_index = len(program) - 1
 
     if end_index < 0: end_index = 0
@@ -28,8 +28,7 @@ while True:
         elif token == ".":
             print(chr(array[pointer]), end="")
         elif token == ",":
-            input_data = input("input > ")
-            array[pointer] = ord(input_data[0])
+            array[pointer] = ord(input("input > ")[0])
         elif token =="[":
             if array[pointer] == 0:
                 loop_level = 1
