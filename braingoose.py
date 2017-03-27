@@ -4,10 +4,10 @@ BOLD = '\033[1m'
 END_BOLD = '\033[0m'
 
 def main():
-    print(BOLD + "\nBraingoose REPL\n" + END_BOLD)
+    print(BOLD + "\nBraingoose REPL" + END_BOLD)
     array = [0] * 30000
     while True:
-        program = input("bg > ")
+        program = input("\nbg > ")
         end_index = len(program) - 1
         pointer = 0
         program_location = 0
