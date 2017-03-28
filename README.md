@@ -62,4 +62,10 @@ Pointer :   ^
 >++.                    And finally a newline from Cell #6
 ```
 
+This code can also be rewritten without comments as:
+
+```brainfuck
+++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
+```
+
 [wbfe]: https://en.wikipedia.org/wiki/Brainfuck#Hello_World.21
