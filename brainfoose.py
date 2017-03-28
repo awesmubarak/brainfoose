@@ -4,7 +4,7 @@ BOLD = '\033[1m'
 END_BOLD = '\033[0m'
 
 def main():
-    print(BOLD + "\nBraingoose REPL" + END_BOLD)
+    print(BOLD + "\nBrainfoose REPL" + END_BOLD)
     array = [0] * 30000
     while True:
         program = input("\nbg > ")
