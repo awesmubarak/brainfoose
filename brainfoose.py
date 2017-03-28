@@ -26,7 +26,7 @@ def main():
             elif token == ".":
                 print(chr(tape[pointer]), end="")
             elif token == ",":
-                tape[pointer] = ord(input("input > ")[0])
+                tape[pointer] = ord(input(BOLD + "input > " + END_BOLD)[0])
             elif token == "[":
                 if tape[pointer] == 0:
                     loop_level = 1
