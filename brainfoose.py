@@ -4,8 +4,10 @@ BOLD = '\033[1m'
 END_BOLD = '\033[0m'
 
 def main():
+    def new_array():
+        return [0] * 30000
     print(BOLD + "\nBrainfoose REPL" + END_BOLD)
-    array = [0] * 30000
+    array = new_array()
     while True:
         program = input("\nbg > ")
         end_index = len(program) - 1
@@ -47,7 +49,7 @@ def main():
                         loop_level += 1
                 program_location -= 1
             elif token == "&":
-                array = [0] * 30000
+                array = new_array()
             program_location += 1
     print("\n")
 
