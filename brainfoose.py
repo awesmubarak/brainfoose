@@ -4,10 +4,10 @@ BOLD = '\033[1m'
 END_BOLD = '\033[0m'
 
 def main():
-    def new_array():
+    def new_tape():
         return [0] * 30000
     print(BOLD + "\nBrainfoose REPL" + END_BOLD)
-    array = new_array()
+    tape = new_tape()
     while True:
         program = input("\nbg > ")
         end_index = len(program) - 1
@@ -21,15 +21,15 @@ def main():
             elif token == "<":
                 pointer -= 1
             elif token == "+":
-                array[pointer] += 1
+                tape[pointer] += 1
             elif token == "-":
-                array[pointer] -= 1
+                tape[pointer] -= 1
             elif token == ".":
-                print(chr(array[pointer]), end="")
+                print(chr(tape[pointer]), end="")
             elif token == ",":
-                array[pointer] = ord(input("input > ")[0])
+                tape[pointer] = ord(input("input > ")[0])
             elif token == "[":
-                if array[pointer] == 0:
+                if tape[pointer] == 0:
                     loop_level = 1
                     while loop_level > 0:
                         program_location += 1
@@ -49,7 +49,7 @@ def main():
                         loop_level += 1
                 program_location -= 1
             elif token == "&":
-                array = new_array()
+                tape = new_tape()
             program_location += 1
     print("\n")
 
