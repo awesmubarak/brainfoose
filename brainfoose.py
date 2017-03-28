@@ -13,7 +13,6 @@ def main():
         end_index = len(program) - 1
         pointer = 0
         program_location = 0
-
         while program_location <= end_index:
             token = program[program_location]
             if token == ">":
