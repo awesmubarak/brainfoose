@@ -1,6 +1,10 @@
 # Brainfoose
 
-Yet another brainfuck interperator.
+Yet another brainfuck interperator
+
+### Usage
+
+The following 9 characters make up the entire language:
 
 | Character | Meaning                                                          |
 | --------- | ---------------------------------------------------------------- |
