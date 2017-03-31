@@ -1,6 +1,6 @@
 # Brainfoose
 
-Yet another brainfuck interperator
+Yet another brainfuck interperator.
 
 ### Usage
 
