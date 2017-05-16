@@ -13,6 +13,11 @@ def main():
     while True:
         try:
             program = input(BOLD + "\nbg > " + END_BOLD)
+            if program[0] == "%":
+                with open(program[2:], "r") as file:
+                    program = ""
+                    for line in file.readlines():
+                        program += line
         except KeyboardInterrupt:
             print("\n\nBye.\n")
             sys.exit(0)

@@ -17,6 +17,7 @@ The following 9 characters make up the language:
 | `[`       | If the value at the data pointer is 0, move to matching `]`.     |
 | `]`       | If the value at the data pointer is not 0, more to matching `[`. |
 | `&`       | Reset array.                                                     |
+| `%`       | Load program from file, syntax: `% [filename.bf]`.               |
 
 To quit the prompt press <kbd>ctrl</kbd> <kbd>c</kbd>.
 
