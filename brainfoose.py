@@ -61,7 +61,6 @@ def main():
             elif token == "&":
                 tape = new_tape()
             program_location += 1
-    print("\n")
 
 
 if __name__ == '__main__':
