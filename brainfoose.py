@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import sys  # Allows exiting
+
 BOLD = '\033[1m'
 END_BOLD = '\033[0m'
 
@@ -9,7 +11,11 @@ def main():
     print(BOLD + "\nBrainfoose REPL" + END_BOLD)
     tape = new_tape()
     while True:
-        program = input(BOLD + "\nbg > " + END_BOLD)
+        try:
+            program = input(BOLD + "\nbg > " + END_BOLD)
+        except KeyboardInterrupt:
+            print("\n\nBye.\n")
+            sys.exit(0)
         end_index = len(program) - 1
         pointer = 0
         program_location = 0

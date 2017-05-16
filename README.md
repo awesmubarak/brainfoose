@@ -4,7 +4,7 @@ Yet another brainfuck interperator.
 
 ### Usage
 
-The following 9 characters make up the entire language:
+The following 9 characters make up the language:
 
 | Character | Meaning                                                          |
 | --------- | ---------------------------------------------------------------- |
@@ -18,7 +18,9 @@ The following 9 characters make up the entire language:
 | `]`       | If the value at the data pointer is not 0, more to matching `[`. |
 | `&`       | Reset array.                                                     |
 
-The following is an example of hello world, taken from [wikipedia][wbfe].
+To quit the prompt press <kbd>ctrl</kbd> <kbd>c</kbd>.
+
+The following is hello world program, taken from [wikipedia][wbfe].
 
 ```brainfuck
 [ This program prints "Hello World!" and a newline to the screen, its
