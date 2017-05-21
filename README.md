@@ -21,6 +21,8 @@ The following 9 characters make up the language:
 
 To quit the prompt press <kbd>ctrl</kbd> <kbd>c</kbd>.
 
+[![demo](https://asciinema.org/a/42383.png)](https://asciinema.org/a/9ecaa1s4wj8rctm0hypzrg595?autoplay=1)
+
 The following is hello world program, taken from [wikipedia][wbfe].
 
 ```brainfuck
