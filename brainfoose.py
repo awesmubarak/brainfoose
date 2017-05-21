@@ -12,7 +12,7 @@ def main():
     tape = new_tape()
     while True:
         try:
-            program = input(BOLD + "bg > " + END_BOLD)
+            program = input(BOLD + "bf > " + END_BOLD)
             if program[0] == "%":
                 with open(program[2:], "r") as file:
                     program = ""
