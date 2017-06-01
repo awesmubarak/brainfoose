@@ -4,7 +4,7 @@ Yet another brainfuck interperator.
 
 ### Usage
 
-The following 9 characters make up the language:
+The following characters make up the language:
 
 | Character | Meaning                                                          |
 | --------- | ---------------------------------------------------------------- |
