@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+
+from setuptools import setup
+from codecs import open
+from os import path
+
+here = path.abspath(path.dirname(__file__))
+
+# Get the long description from the README file
+with open(path.join(here, 'README.rst'), encoding='utf-8') as file:
+    long_description = file.read()
+
+setup(
+     name='brainfoose',
+     version='2.0.0',
+     description='A brainfuck REPL.',
+     long_description=long_description,
+     url='https://github.com/abactel/brainfoose',
+     author='Awes Mubarak',
+     author_email='abactel@protonmail.com',
+     license='MIT',
+     classifiers=[
+         'Development Status :: 5 - Production/Stable',
+         'Intended Audience :: Developers',
+         'Topic :: Software Development',
+         'Operating System :: OS Independent',
+         'License :: OSI Approved :: MIT License',
+         'Programming Language :: Python'
+     ],
+     keywords='brainfuck esoteric programming language repl',
+     packages=['brainfoose'],
+     entry_points={
+        "console_scripts": [
+            "brainfoose=brainfoose:main"
+        ],
+     },
+     install_requires=['docopt', 'termcolor']
+)
