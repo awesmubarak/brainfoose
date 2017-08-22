@@ -35,12 +35,12 @@ REPL syntax:
 
 """
 
+
 from docopt import docopt      # Command line argument parsing
-from sys import exit           # Allows exiting
 from termcolor import colored  # Color output
 
 
-def get_input(text:str):
+def get_input(text: str):
     """Handle user input.
 
     The function exits cleanly on ``KeyboardInterrupt`` and ``EOFError``
@@ -69,9 +69,7 @@ def get_program():
         Str: program
 
     """
-    program = get_input("bf")
-    if len(program) == 0:
-        program = " "
+    program = get_input("bf") + " "  # space need to prevent out of index error
     if program[0] == "%":
         try:
             with open(program[1:], "r") as file:
@@ -97,7 +95,7 @@ def new_tape(tape_size=3000):
     return [0] * tape_size
 
 
-def execute_program(program:str, tape:list):
+def execute_program(program: str, tape: list):
     """Runs the brainfuck program.
 
     Args:
@@ -121,7 +119,7 @@ def execute_program(program:str, tape:list):
     program_location = 0
     while program_location <= end_index:
         token = program[program_location]
-        print_at_end = "" # printing characters add no final line break; needed
+        print_at_end = ""  # adds final linebreak after printing chars
         if token == ">":
             pointer += 1
         elif token == "<":
@@ -170,9 +168,10 @@ def execute_program(program:str, tape:list):
 
 
 def main():
+    """Starts REPL or runs program."""
     arguments = docopt(__doc__, version="Brainfoose v2.0.0")
     tape = new_tape(int(arguments["--tape_size"]))
-    print("\n\033[1mBrainfoose.\033[0m\n") # brainfoose in bold plus newlines
+    print("\n\033[1mBrainfoose.\033[0m\n")  # brainfoose in bold plus newlines
     if arguments["--run_command"]:
         tape, output = execute_program(arguments["--run_command"], tape)
         print(output)
@@ -181,6 +180,7 @@ def main():
             program = get_program()
             tape, output = execute_program(program, tape)
             print(output)
+
 
 if __name__ == '__main__':
     main()

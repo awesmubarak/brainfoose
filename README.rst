@@ -113,4 +113,4 @@ Further reading
 
 - https://learnxinyminutes.com/docs/brainfuck/
 - https://en.wikipedia.org/wiki/Brainfuck
-- for dummies http://blog.klipse.tech/brainfuck/2016/12/17/brainfuck.html
+- http://blog.klipse.tech/brainfuck/2016/12/17/brainfuck.html
