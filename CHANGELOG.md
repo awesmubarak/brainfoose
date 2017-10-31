@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. The format
 is based on [Keep a Changelog](http://keepachangelog.com/) and this project
 adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.1] - 2017-10-31
+### Changed
+-   Entering `?` now displays a help message.
+
 ## [2.0.0] - 2017-08-14
 ### Changed
 -   All code has been refactored.
@@ -12,5 +16,6 @@ adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 -   Initial working release
 
+[2.0.0]: https://github.com/abactel/brainfoose/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/abactel/brainfoose/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/abactel/brainfoose/releases/tag/V1.0.0

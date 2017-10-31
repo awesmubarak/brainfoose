@@ -18,6 +18,7 @@ Options:
     --tape_size=<tape_size>  Set size of tape [default: 3000]
 
 REPL syntax:
+    ?  Print this help screen
     >  Increment the data pointer by 1
     <  Decrement the data pointer by 1
     +  Increment the value at the data pointer by 1
@@ -70,7 +71,7 @@ def get_program():
 
     """
     program = get_input("bf") + " "  # space need to prevent out of index error
-    if program[0] == "%":
+    if program.startswith("%"):
         try:
             with open(program[1:], "r") as file:
                 program = ""
@@ -79,6 +80,8 @@ def get_program():
         except FileNotFoundError:
             print("File not found: " + program[2:])
             program = ""
+    elif program.startswith("?"):
+        print(__doc__)
     return program
 
 
