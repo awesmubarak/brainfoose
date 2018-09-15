@@ -37,7 +37,7 @@ REPL syntax:
 """
 
 
-from docopt import docopt      # Command line argument parsing
+from docopt import docopt  # Command line argument parsing
 from termcolor import colored  # Color output
 
 
@@ -164,7 +164,7 @@ def execute_program(program: str, tape: list):
             for cell_n, cell in enumerate(tape):
                 if cell != 0:
                     last_important_value = cell_n
-            output.append(str(tape[:last_important_value + 1]))
+            output.append(str(tape[: last_important_value + 1]))
         program_location += 1
     output.append(print_at_end)
     return tape, "".join(output)
@@ -185,5 +185,5 @@ def main():
             print(output)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

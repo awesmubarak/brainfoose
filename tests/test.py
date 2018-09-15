@@ -5,9 +5,11 @@ import unittest
 
 from termcolor import colored
 
-def read_file(filename:str):
+
+def read_file(filename: str):
     with open(filename) as file:
         return file.readline()
+
 
 class TestExecution(unittest.TestCase):
 
@@ -61,7 +63,6 @@ class TestExecution(unittest.TestCase):
         correct = [0, 4, 0, 0, 0]
         self.assertEqual(bf, correct)
 
-
     # errors
     def test_error_if_unequal_brackets(self):
         tape = brainfoose.new_tape(5)
@@ -83,5 +84,5 @@ class TestExecution(unittest.TestCase):
         self.assertEqual(out, correct)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
