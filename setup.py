@@ -12,12 +12,12 @@ with open(path.join(here, "README.rst"), encoding="utf-8") as file:
 
 setup(
     name="brainfoose",
-    version="2.0.2",
+    version="2.0.3",
     description="A brainfuck REPL.",
     long_description=long_description,
     url="https://github.com/awesmubarak/brainfoose",
     author="Awes Mubarak",
-    author_email="awes.mubarak@awesmubarak.com",
+    author_email="contact@awesmubarak.com",
     license="MIT",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
